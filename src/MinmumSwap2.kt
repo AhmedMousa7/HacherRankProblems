@@ -1,11 +1,11 @@
 import kotlin.time.measureTimedValue
 
 fun main(){
-    val (value, duration) = measureTimedValue {
+    val output = measureTimedValue {
         minimumSwaps(arrayOf(3, 7, 6, 9, 1, 8, 10, 4, 2, 5))
     }
-    println(value)
-    println(duration)
+    println(output.value)
+    println(output.duration)
 }
 
 fun minimumSwaps(arr: Array<Int>): Int {
